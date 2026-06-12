@@ -1,5 +1,10 @@
 # Search-R1-Improve: Stable GRPO Training for Search Agents
 
+<p align="center">
+  <strong>English</strong> |
+  <a href="README_CN.md">简体中文</a>
+</p>
+
 This repository extends [Search-R1](https://github.com/PeterGriffinJin/Search-R1), a reinforcement learning framework for training language models to interleave reasoning and search-engine calls.
 
 The main improvement is an action-gated likelihood-decline regularizer inspired by *On Group Relative Policy Optimization Collapse in Agent Search: The Lazy Likelihood-Displacement*. The regularizer protects useful trajectories from unintended likelihood reduction during GRPO updates. This repository also includes larger context budgets, longer search trajectories, loss clipping, multi-dataset preprocessing, and training-log visualization.

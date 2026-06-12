@@ -1,5 +1,10 @@
 # Search-R1-Improve：面向搜索智能体的稳定 GRPO 训练
 
+<p align="center">
+  <a href="README.md">English</a> |
+  <strong>简体中文</strong>
+</p>
+
 本仓库扩展自 [Search-R1](https://github.com/PeterGriffinJin/Search-R1)。Search-R1 是一个强化学习框架，用于训练语言模型交替执行推理与搜索引擎调用。
 
 本项目的主要改进是一种 action 级门控的似然下降正则方法，其思想受到论文 *On Group Relative Policy Optimization Collapse in Agent Search: The Lazy Likelihood-Displacement* 启发。该正则项用于防止 GRPO 更新过程中有用轨迹的似然被意外降低。此外，本仓库还加入了更大的上下文预算、更长的搜索轨迹、loss 裁剪、多数据集预处理以及训练日志可视化工具。
